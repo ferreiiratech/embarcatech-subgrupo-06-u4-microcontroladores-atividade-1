@@ -81,7 +81,80 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
 
 ## Testes
 
-A equipe implementou testes básicos para garantir que cada componente (teclado, LEDs, buzzer) funcione corretamente. Todos os testes foram realizados no simulador Wokwi e também na placa Raspberry Pi Pico W.
+A equipe implementou testes básicos para garantir que cada componente (teclado, LEDs e buzzer) funcione corretamente. Todos os testes foram realizados no simulador Wokwi e também na placa Raspberry Pi Pico W.
+
+Os testes realizados foram:
+
+### 1. Acendendo os LEDs Individualmente
+- **Descrição:** Verifica se os LEDs verde, azul e vermelho podem ser acendidos individualmente ao pressionar as teclas correspondentes.
+- **Passos:**
+  1. Pressione a tecla `2` para ligar o LED verde.
+  2. Pressione a tecla `3` para ligar o LED azul.
+  3. Pressione a tecla `5` para ligar o LED vermelho.
+  4. Pressione a tecla `0` para desligar todos os LEDs.
+- **Resultado:** Cada LED acendeu corretamente e foi desligado ao pressionar `0`.
+- ![Teste LEDs Individualmente](docs/video1.gif)
+
+---
+
+### 2. Acendendo Todos os LEDs Simultaneamente
+- **Descrição:** Verifica se todos os LEDs acendem ao mesmo tempo ao pressionar a tecla `6`.
+- **Passos:**
+  1. Pressione a tecla `6` para acender todos os LEDs.
+  2. Pressione a tecla `0` para desligar todos os LEDs.
+- **Resultado:** Todos os LEDs acenderam simultaneamente e foram desligados ao pressionar `0`.
+- ![Teste LEDs Simultâneos](docs/video2.gif)
+
+---
+
+### 3. Acendendo os LEDs Alternadamente
+- **Descrição:** Verifica se os LEDs alternam entre acender e apagar em sequência ao pressionar a tecla `9`.
+- **Passos:**
+  1. Pressione a tecla `9` e observe a sequência de alternância:
+     - LED verde acende, enquanto azul e vermelho estão apagados.
+     - LED azul acende, enquanto verde e vermelho estão apagados.
+     - LED vermelho acende, enquanto verde e azul estão apagados.
+  2. O ciclo se repete cinco vezes.
+- **Resultado:** Os LEDs alternaram corretamente em sequência por cinco ciclos.
+- ![Teste LEDs Alternados](docs/video3.gif)
+
+---
+
+### 4. Acendendo o Pisca
+- **Descrição:** Verifica se todos os LEDs piscam simultaneamente ao pressionar a tecla `8`.
+- **Passos:**
+  1. Pressione a tecla `8` e observe o comportamento:
+     - Todos os LEDs acendem juntos e depois apagam.
+     - O ciclo de piscar se repete cinco vezes.
+- **Resultado:** Todos os LEDs piscaram simultaneamente conforme o esperado.
+- ![Teste LEDs Pisca](docs/video4.gif)
+
+---
+
+### 5. Ativando o Buzzer
+- **Descrição:** Verifica se o buzzer emite som corretamente ao pressionar a tecla `#`.
+- **Passos:**
+  1. Pressione a tecla `#` e observe:
+     - O buzzer emite cinco bipes consecutivos, cada um com 200ms de duração.
+- **Resultado:** O buzzer emitiu os bipes conforme o esperado.
+- ![Teste Buzzer](docs/video5.mp4)
+
+---
+
+### 6. Restrições de Interação
+- **Descrição:** Verifica se o sistema responde apenas às teclas permitidas (`2`, `3`, `5`, `6`, `8`, `9`, `#`, `0`) e ignora teclas inválidas.
+- **Passos:**
+  1. Pressione qualquer tecla fora das permitidas (por exemplo, `1`, `4`, `7`, `A`, `B`, `C`, `D`, `*`).
+  2. Observe se o sistema exibe uma mensagem de "tecla inválida" e não realiza nenhuma ação.
+- **Resultado:** Apenas as teclas permitidas produziram ações; teclas inválidas foram ignoradas com mensagens de erro.
+- ![Teste Restrições](docs/restricoes.gif)
+
+---
+
+### Resultados Gerais
+- Todos os testes foram concluídos com sucesso tanto no simulador Wokwi quanto na placa Raspberry Pi Pico W.
+- Os GIFs demonstrando os testes podem ser encontrados na pasta [`docs/`](docs/).
+
 
 ## Vídeo Ensaio
 
@@ -92,7 +165,7 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
 - **Líder do Projeto**: [Nome do Líder]
 - **Desenvolvedores**:
   - Yasmin Cordeiro de Souza Meira
-  - [Nome do Desenvolvedor 2]
+  - Arthur Saldanha Félix Ulisses
   - [Nome do Desenvolvedor 3]
   - [Nome do Desenvolvedor 4]
   - [Nome do Desenvolvedor 5]
