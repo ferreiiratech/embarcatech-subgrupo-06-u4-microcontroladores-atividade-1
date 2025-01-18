@@ -93,7 +93,7 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
 - **Desenvolvedores**:
   - Yasmin Cordeiro de Souza Meira
   - Atenilton Santos de Souza Junior
-  - [Nome do Desenvolvedor 3]
+  - Nicole Rocha
   - [Nome do Desenvolvedor 4]
   - [Nome do Desenvolvedor 5]
 
