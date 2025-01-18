@@ -1,4 +1,17 @@
-# Controle de Pinos GPIO com Teclado Matricial
+<h1 align="center">Controle de Pinos GPIO com Teclado Matricial</h1>
+
+## Sumário
+
+1. [Descrição](#descrição)  
+2. [Funcionalidades Implementadas](#funcionalidades-implementadas)  
+3. [Componentes Utilizados](#componentes-utilizados)  
+4. [Objetivos](#objetivos)  
+5. [Passos para Implementação](#passos-para-implementação)   
+6. [Instruções de Uso](#instruções-de-uso)  
+7. [Testes](#testes)  
+8. [Vídeo-Ensaio](#video-ensaio)  
+9. [Formação da Equipe](#formação-da-equipe)  
+10. [Licença](#licença)  
 
 ## Descrição
 
