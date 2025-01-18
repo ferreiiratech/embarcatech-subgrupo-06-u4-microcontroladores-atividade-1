@@ -92,7 +92,7 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
 - **Líder do Projeto**: [Nome do Líder]
 - **Desenvolvedores**:
   - Yasmin Cordeiro de Souza Meira
-  - [Nome do Desenvolvedor 2]
+  - Atenilton Santos de Souza Junior
   - [Nome do Desenvolvedor 3]
   - [Nome do Desenvolvedor 4]
   - [Nome do Desenvolvedor 5]
