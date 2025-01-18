@@ -97,3 +97,77 @@ void blink_all_leds() {
         sleep_ms(200);
     }
 }
+
+// Alterna LEDs em sequência (Função secreta 2)
+void blink_led_sequence() {
+    for (int i = 0; i < 5; i++) {
+        control_leds(1, 0, 0);
+        sleep_ms(250);
+        control_leds(0, 1, 0);
+        sleep_ms(250);
+        control_leds(0, 0, 1);
+        sleep_ms(250);
+        control_leds(0, 0, 0);
+    }
+}
+
+// Ativação do buzzer
+void activate_buzzer(uint duration, uint repetitions) {
+    uint slice_num = pwm_gpio_to_slice_num(buzzer);
+    for (int i = 0; i < repetitions; i++) {
+        pwm_set_gpio_level(buzzer, 2048);
+        sleep_ms(duration);
+        pwm_set_gpio_level(buzzer, 0);
+        sleep_ms(100);
+    }
+}
+
+// Processamento das teclas
+void process_key(char key) {
+    switch (key) {
+        case '2':
+            control_leds(1, 0, 0); // Liga LED verde
+            break;
+        case '3':
+            control_leds(0, 1, 0); // Liga LED azul
+            break;
+        case '5':
+            control_leds(0, 0, 1); // Liga LED vermelho
+            break;
+        case '6':
+            control_leds(1, 1, 1); // Liga todos os LEDs
+            break;
+        case '0':
+            control_leds(0, 0, 0); // Desliga todos os LEDs
+            break;
+        case '#':
+            activate_buzzer(200, 5); // Ativa o buzzer 5 vezes com duração de 200ms
+            break;
+        case '8': // Função secreta 1
+            blink_all_leds();
+            break;
+        case '9': // Função secreta 2
+            blink_led_sequence();
+            break;
+        default:
+            printf("Tecla inválida: %c\n", key);
+    }
+}
+
+// Função principal
+int main() {
+    stdio_init_all();
+    initialize_hardware();
+    display_menu();
+
+    while (1) {
+        char key = keypad_get_key();
+        if (key != '\0') {
+            printf("Tecla pressionada: %c\n", key);
+            process_key(key);
+        }
+        sleep_ms(100);
+    }
+
+    return 0;
+}
