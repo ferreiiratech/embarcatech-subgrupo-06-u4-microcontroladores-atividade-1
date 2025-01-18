@@ -60,7 +60,7 @@ pico_enable_stdio_usb(gpio-pin-controll-led 1)
 
 # Add the standard library to the build
 target_link_libraries(gpio-pin-controll-led
-        pico_stdlib)
+        pico_stdlib hardware_pwm)
 
 # Add the standard include files to the build
 target_include_directories(gpio-pin-controll-led PRIVATE
