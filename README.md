@@ -87,6 +87,8 @@ A equipe implementou testes básicos para garantir que cada componente (teclado,
 
 Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode ser visualizado [aqui](https://www.dropbox.com/scl/fi/va5dp18ahzarjyd6z8boh/2025-01-09-16-29-53.mkv?rlkey=j93icbgjf3m080d1tyde33fxz&dl=0).
 
+Os vídeos de testes no hardware podem ser visualizados [aqui] (https://drive.google.com/drive/folders/1Q8HoYM7lStuAnmCfRLd9xlOuZLb4y-FL?usp=drive_link).
+
 ## Formação da Equipe
 
 - **Líder do Projeto**: [Nome do Líder]
