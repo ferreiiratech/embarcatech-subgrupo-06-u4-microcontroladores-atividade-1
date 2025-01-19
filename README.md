@@ -184,14 +184,13 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
 
 ## Formação da Equipe
 
-- **Líder do Projeto**: [Nome do Líder]
+- **Líder do Projeto**: Leonardo Ferreira
 - **Desenvolvedores**:
   - Yasmin Cordeiro de Souza Meira
   - Arthur Saldanha Félix Ulisses
   - Adão Thalisson Castro Guimarães
   - Nicole Rocha
   - João Felipe Teles Monte
-  - [Nome do Desenvolvedor 6]
 
 ## Licença
 
