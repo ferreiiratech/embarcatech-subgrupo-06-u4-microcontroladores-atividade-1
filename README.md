@@ -182,7 +182,7 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
   - Yasmin Cordeiro de Souza Meira
   - Arthur Saldanha Félix Ulisses
   - Adão Thalisson Castro Guimarães
-  - [Nome do Desenvolvedor 4]
+  - Nicole Rocha
   - [Nome do Desenvolvedor 5]
 
 ## Licença
