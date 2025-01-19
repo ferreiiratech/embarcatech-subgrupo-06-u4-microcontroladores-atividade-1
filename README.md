@@ -49,7 +49,7 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
 
 ## Objetivos
 
-- Acionar 3 LEDs RGB conforme as teclas 'A', 'B' e 'C'.
+- Acionar 3 LEDs RGB conforme as teclas '2', '3' e '5'.
 - Controlar a emissão de som do buzzer ao pressionar a tecla '#'.
 - Reproduzir uma melodia ao pressionar uma tecla específica.
 
