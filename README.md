@@ -17,7 +17,7 @@
   - [5. Ativando o buzzer](#5-ativando-o-buzzer)
   - [Testes no Hardware](#testes-no-hardware)
   - [Resultados gerais](#resultados-gerais)
-- [Vídeo Ensaio](#vídeo-ensaio)
+- [Vídeos](#vídeos)
 - [Formação da Equipe](#formação-da-equipe)
 - [Licença](#licença)
 
@@ -178,9 +178,11 @@ A equipe implementou testes básicos para garantir o funcionamento correto dos c
 - Todos os testes foram concluídos com sucesso tanto no simulador Wokwi quanto na placa Raspberry Pi Pico W.
 - Os arquivos de demonstração podem ser encontrados na pasta [`docs/`](docs/).
 
-## Vídeo Ensaio
+## Vídeos
 
-Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode ser visualizado [aqui](https://www.dropbox.com/scl/fi/k9m5nmvstxah57ag2ah7c/test-all.mp4?rlkey=x65cjpvh3a8fxn5h4dw411jmu&st=mp245ijy&dl=0).
+Vídeo de apresentação geral do projeto de 3 minutos pode ser visualizado [clicando aqui](https://youtu.be/uhTV0buw384?si=jPycRLlOQdBSU9gu)
+
+Um vídeo ensaio demonstrando o funcionamento do projeto pode ser visualizado [aqui](https://www.dropbox.com/scl/fi/k9m5nmvstxah57ag2ah7c/test-all.mp4?rlkey=x65cjpvh3a8fxn5h4dw411jmu&st=mp245ijy&dl=0).
 
 ## Formação da Equipe
 
