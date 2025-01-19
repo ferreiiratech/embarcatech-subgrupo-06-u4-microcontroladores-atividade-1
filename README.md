@@ -43,23 +43,21 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
 ## Componentes Utilizados
 
 - **Teclado Matricial 4x4**: Um teclado de membrana 4x4 para entrada de dados.
-- **3 LEDs RGB**: LEDs para indicar as ações realizadas conforme as teclas pressionadas.
+- **LED RGB**: LED para indicar as ações realizadas, com as cores, conforme as teclas pressionadas.
 - **Buzzer**: Componente para emitir um som, acionado por uma tecla específica.
 - **Microcontrolador Raspberry Pi Pico W**: O microcontrolador responsável pelo controle dos pinos GPIO.
 
 ## Objetivos
 
-- Acionar 3 LEDs RGB conforme as teclas '2', '3' e '5'.
+- Acionar as cores do LED RGB conforme as teclas '2', '3' e '5'.
 - Controlar a emissão de som do buzzer ao pressionar a tecla '#'.
-- Reproduzir uma melodia ao pressionar uma tecla específica.
 
 ## Passos para Implementação
 
 1. **Configuração dos Pinos**: Configuração dos pinos GPIO do Raspberry Pi Pico W para o teclado matricial, LEDs e buzzer.
 2. **Leitura do Teclado**: Implementação de uma função para escanear o teclado matricial e identificar as teclas pressionadas.
 3. **Controle dos LEDs**: Os LEDs são acionados de acordo com a tecla pressionada.
-4. **Controle do Buzzer**: O buzzer é ativado ao pressionar a tecla '#'.
-5. **Reprodução de Música**: Ao pressionar uma tecla específica, uma melodia é tocada com o buzzer.
+4. **Controle do Buzzer**: O buzzer é ativado, emitindo som, ao pressionar a tecla '#'.
 
 ## Instruções de Uso
 
