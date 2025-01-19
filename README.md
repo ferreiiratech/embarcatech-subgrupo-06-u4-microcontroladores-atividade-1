@@ -2,16 +2,24 @@
 
 ## Sumário
 
-1. [Descrição](#descrição)  
-2. [Funcionalidades Implementadas](#funcionalidades-implementadas)  
-3. [Componentes Utilizados](#componentes-utilizados)  
-4. [Objetivos](#objetivos)  
-5. [Passos para Implementação](#passos-para-implementação)   
-6. [Instruções de Uso](#instruções-de-uso)  
-7. [Testes](#testes)  
-8. [Vídeo-Ensaio](#video-ensaio)  
-9. [Formação da Equipe](#formação-da-equipe)  
-10. [Licença](#licença)  
+- [Sumário](#sumário)
+- [Descrição](#descrição)
+- [Funcionalidades Implementadas](#funcionalidades-implementadas)
+- [Componentes Utilizados](#componentes-utilizados)
+- [Objetivos](#objetivos)
+- [Passos para Implementação](#passos-para-implementação)
+- [Instruções de Uso](#instruções-de-uso)
+- [Testes](#testes)
+  - [1. Acendendo os LEDs Individualmente](#1-acendendo-os-leds-individualmente)
+  - [2. Acendendo Todos os LEDs Simultaneamente](#2-acendendo-todos-os-leds-simultaneamente)
+  - [3. Acendendo os LEDs Alternadamente](#3-acendendo-os-leds-alternadamente)
+  - [4. Acendendo o Pisca](#4-acendendo-o-pisca)
+  - [5. Ativando o Buzzer](#5-ativando-o-buzzer)
+  - [6. Restrições de Interação](#6-restrições-de-interação)
+  - [Resultados Gerais](#resultados-gerais)
+- [Vídeo Ensaio](#vídeo-ensaio)
+- [Formação da Equipe](#formação-da-equipe)
+- [Licença](#licença)
 
 ## Descrição
 
@@ -20,16 +28,16 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
 ## Funcionalidades Implementadas
 
 - **Acionamento de LEDs RGB:**
-    - Tecla 2: Liga o LED verde.
-    - Tecla 3: Liga o LED azul.
-    - Tecla 5: Liga o LED vermelho.
-    - Tecla 6: Liga todos os LEDs.
-    - Tecla 0: Desliga todos os LEDs.
+  - Tecla 2: Liga o LED verde.
+  - Tecla 3: Liga o LED azul.
+  - Tecla 5: Liga o LED vermelho.
+  - Tecla 6: Liga todos os LEDs.
+  - Tecla 0: Desliga todos os LEDs.
 - **Controle do Buzzer:**
-    - Tecla #: Ativa o buzzer com cinco beeps.
+  - Tecla #: Ativa o buzzer com cinco beeps.
 - **Modos Especiais:**
-    - Tecla 8: Pisca todos os LEDs juntos cinco vezes.
-    - Tecla 9: Pisca os LEDs alternadamente em sequência (verde, azul, vermelho) por cinco ciclos.
+  - Tecla 8: Pisca todos os LEDs juntos cinco vezes.
+  - Tecla 9: Pisca os LEDs alternadamente em sequência (verde, azul, vermelho) por cinco ciclos.
 
 ## Componentes Utilizados
 
@@ -55,8 +63,8 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
 ## Instruções de Uso
 
 1. **Instalar o VS Code e o Pico SDK**: Caso ainda não tenha, instale o Visual Studio Code e o Pico SDK para compilar e carregar o código no Raspberry Pi Pico W.
-   
 2. **Configurar o Ambiente de Desenvolvimento**:
+
    - Clone o repositório com o seguinte comando:
      ```bash
      git clone https://github.com/ferreiiratech/embarcatech-subgrupo-06-microcontroladores-gpio.git
@@ -70,11 +78,9 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
 
 3. **Simulação no Wokwi**:
    - Use o simulador online Wokwi para testar o projeto sem hardware físico. Acesse o simulador [aqui](https://wokwi.com/projects/420344440238547969).
-   
 4. **Carregar o Código no Raspberry Pi Pico W**:
    - Conecte a placa Raspberry Pi Pico W ao seu computador.
    - Compile o código e faça o upload para o microcontrolador usando o VS Code.
-   
 5. **Interação com o Sistema**:
    - Ao pressionar as teclas **A**, **B**, e **C**, os LEDs RGB .
    - Ao pressionar a tecla **#**, o buzzer emitirá um som.
@@ -86,6 +92,7 @@ A equipe implementou testes básicos para garantir que cada componente (teclado,
 Os testes realizados foram:
 
 ### 1. Acendendo os LEDs Individualmente
+
 - **Descrição:** Verifica se os LEDs verde, azul e vermelho podem ser acendidos individualmente ao pressionar as teclas correspondentes.
 - **Passos:**
   1. Pressione a tecla `2` para ligar o LED verde.
@@ -98,6 +105,7 @@ Os testes realizados foram:
 ---
 
 ### 2. Acendendo Todos os LEDs Simultaneamente
+
 - **Descrição:** Verifica se todos os LEDs acendem ao mesmo tempo ao pressionar a tecla `6`.
 - **Passos:**
   1. Pressione a tecla `6` para acender todos os LEDs.
@@ -108,6 +116,7 @@ Os testes realizados foram:
 ---
 
 ### 3. Acendendo os LEDs Alternadamente
+
 - **Descrição:** Verifica se os LEDs alternam entre acender e apagar em sequência ao pressionar a tecla `9`.
 - **Passos:**
   1. Pressione a tecla `9` e observe a sequência de alternância:
@@ -121,6 +130,7 @@ Os testes realizados foram:
 ---
 
 ### 4. Acendendo o Pisca
+
 - **Descrição:** Verifica se todos os LEDs piscam simultaneamente ao pressionar a tecla `8`.
 - **Passos:**
   1. Pressione a tecla `8` e observe o comportamento:
@@ -132,6 +142,7 @@ Os testes realizados foram:
 ---
 
 ### 5. Ativando o Buzzer
+
 - **Descrição:** Verifica se o buzzer emite som corretamente ao pressionar a tecla `#`.
 - **Passos:**
   1. Pressione a tecla `#` e observe:
@@ -142,6 +153,7 @@ Os testes realizados foram:
 ---
 
 ### 6. Restrições de Interação
+
 - **Descrição:** Verifica se o sistema responde apenas às teclas permitidas (`2`, `3`, `5`, `6`, `8`, `9`, `#`, `0`) e ignora teclas inválidas.
 - **Passos:**
   1. Pressione qualquer tecla fora das permitidas (por exemplo, `1`, `4`, `7`, `A`, `B`, `C`, `D`, `*`).
@@ -152,9 +164,9 @@ Os testes realizados foram:
 ---
 
 ### Resultados Gerais
+
 - Todos os testes foram concluídos com sucesso tanto no simulador Wokwi quanto na placa Raspberry Pi Pico W.
 - Os GIFs demonstrando os testes podem ser encontrados na pasta [`docs/`](docs/).
-
 
 ## Vídeo Ensaio
 
@@ -166,12 +178,10 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
 - **Desenvolvedores**:
   - Yasmin Cordeiro de Souza Meira
   - Arthur Saldanha Félix Ulisses
-  - [Nome do Desenvolvedor 3]
+  - Adão Thalisson Castro Guimarães
   - [Nome do Desenvolvedor 4]
   - [Nome do Desenvolvedor 5]
 
 ## Licença
 
 Este projeto está licenciado sob a licença MIT.
-
-
