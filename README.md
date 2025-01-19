@@ -148,7 +148,7 @@ Os testes realizados foram:
   1. Pressione a tecla `#` e observe:
      - O buzzer emite cinco bipes consecutivos, cada um com 200ms de duração.
 - **Resultado:** O buzzer emitiu os bipes conforme o esperado.
-- [Veja o vídeo do teste aqui.](docs/video5.mp4)
+- [Veja o vídeo do teste aqui.](https://www.dropbox.com/scl/fi/86g24fopjbjhhmrunfszl/video5.mp4?rlkey=4fymozcalqzncdr6g4o1yijar&st=xps67a5f&dl=0)
 
 ---
 
