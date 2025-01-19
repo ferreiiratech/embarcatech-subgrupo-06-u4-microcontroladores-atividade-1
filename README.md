@@ -10,9 +10,9 @@
 - [Passos para Implementação](#passos-para-implementação)
 - [Instruções de Uso](#instruções-de-uso)
 - [Testes](#testes)
-  - [1. Acendendo os LEDs Individualmente](#1-acendendo-os-leds-individualmente)
-  - [2. Acendendo Todos os LEDs Simultaneamente](#2-acendendo-todos-os-leds-simultaneamente)
-  - [3. Acendendo os LEDs Alternadamente](#3-acendendo-os-leds-alternadamente)
+  - [1. Acendendo as cores do LED individualmente](#1-acendendo-as-cores-do-led-individualmente)
+  - [2. Acendendo Todas as cores do LED simultaneamente](#2-acendendo-todas-as-cores-do-led-simultaneamente)
+  - [3. Acendendo as cores do LED alternadamente](#3-acendendo-as-cores-do-led-alternadamente)
   - [4. Acendendo o Pisca](#4-acendendo-o-pisca)
   - [5. Ativando o Buzzer](#5-ativando-o-buzzer)
   - [6. Restrições de Interação](#6-restrições-de-interação)
@@ -24,7 +24,7 @@
 
 ## Descrição
 
-Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na placa de desenvolvimento Raspberry Pi Pico W, utilizando um teclado matricial 4x4. O sistema permite o acionamento de LEDs RGB e um buzzer, com funcionalidades adicionais, incluindo modos especiais de piscar LEDs.
+Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na placa de desenvolvimento Raspberry Pi Pico W, utilizando um teclado matricial 4x4. O sistema permite o acionamento de LED RGB e um buzzer, com funcionalidades adicionais, incluindo modos especiais de piscar LED.
 
 ## Funcionalidades Implementadas
 
@@ -81,61 +81,61 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
    - Conecte a placa Raspberry Pi Pico W ao seu computador.
    - Compile o código e faça o upload para o microcontrolador usando o VS Code.
 5. **Interação com o Sistema**:
-   - Ao pressionar as teclas **A**, **B**, e **C**, os LEDs RGB .
+   - Ao pressionar as teclas **2**, **3**, e **5**, o LED RGB mostra uma cor diferente.
    - Ao pressionar a tecla **#**, o buzzer emitirá um som.
 
 ## Testes
 
-A equipe implementou testes básicos para garantir que cada componente (teclado, LEDs e buzzer) funcione corretamente. Todos os testes foram realizados no simulador Wokwi e também na placa Raspberry Pi Pico W.
+A equipe implementou testes básicos para garantir que cada componente (teclado, LED e buzzer) funcione corretamente. Todos os testes foram realizados no simulador Wokwi e também na placa Raspberry Pi Pico W.
 
 Os testes realizados foram:
 
-### 1. Acendendo os LEDs Individualmente
+### 1. Acendendo as cores do LED individualmente
 
-- **Descrição:** Verifica se os LEDs verde, azul e vermelho podem ser acendidos individualmente ao pressionar as teclas correspondentes.
+- **Descrição:** Verifica se as cores do LED, verde, azul e vermelho, podem ser acendidas individualmente ao pressionar as teclas correspondentes.
 - **Passos:**
   1. Pressione a tecla `2` para ligar o LED verde.
   2. Pressione a tecla `3` para ligar o LED azul.
   3. Pressione a tecla `5` para ligar o LED vermelho.
-  4. Pressione a tecla `0` para desligar todos os LEDs.
+  4. Pressione a tecla `0` para desliga as cores do LED.
 - **Resultado:** Cada LED acendeu corretamente e foi desligado ao pressionar `0`.
 - ![Teste LEDs Individualmente](docs/video1.gif)
 
 ---
 
-### 2. Acendendo Todos os LEDs Simultaneamente
+### 2. Acendendo Todas as cores do LED simultaneamente
 
-- **Descrição:** Verifica se todos os LEDs acendem ao mesmo tempo ao pressionar a tecla `6`.
+- **Descrição:** Verifica se todas as cores do LED acendem ao mesmo tempo, resultando na cor branca, ao pressionar a tecla `6`.
 - **Passos:**
-  1. Pressione a tecla `6` para acender todos os LEDs.
-  2. Pressione a tecla `0` para desligar todos os LEDs.
-- **Resultado:** Todos os LEDs acenderam simultaneamente e foram desligados ao pressionar `0`.
+  1. Pressione a tecla `6` para acender a cor branca no LED.
+  2. Pressione a tecla `0` para desligar todas as cores do LED.
+- **Resultado:** Todos as cores do LED acenderam simultaneamente resultando na cor branca e foram desligados ao pressionar `0`.
 - ![Teste LEDs Simultâneos](docs/video2.gif)
 
 ---
 
-### 3. Acendendo os LEDs Alternadamente
+### 3. Acendendo as cores do LED alternadamente
 
-- **Descrição:** Verifica se os LEDs alternam entre acender e apagar em sequência ao pressionar a tecla `9`.
+- **Descrição:** Verifica se as cores do LED alternam em sequência ao pressionar a tecla `9`.
 - **Passos:**
   1. Pressione a tecla `9` e observe a sequência de alternância:
      - LED verde acende, enquanto azul e vermelho estão apagados.
      - LED azul acende, enquanto verde e vermelho estão apagados.
      - LED vermelho acende, enquanto verde e azul estão apagados.
   2. O ciclo se repete cinco vezes.
-- **Resultado:** Os LEDs alternaram corretamente em sequência por cinco ciclos.
+- **Resultado:** As cores do LED alternaram corretamente em sequência por cinco ciclos.
 - ![Teste LEDs Alternados](docs/video3.gif)
 
 ---
 
 ### 4. Acendendo o Pisca
 
-- **Descrição:** Verifica se todos os LEDs piscam simultaneamente ao pressionar a tecla `8`.
+- **Descrição:** Verifica se todos as cores do LED piscam simultaneamente ao pressionar a tecla `8`.
 - **Passos:**
   1. Pressione a tecla `8` e observe o comportamento:
-     - Todos os LEDs acendem juntos e depois apagam.
+     - Todos as cores do LED acendem juntos e depois apagam.
      - O ciclo de piscar se repete cinco vezes.
-- **Resultado:** Todos os LEDs piscaram simultaneamente conforme o esperado.
+- **Resultado:** Todos as cores do LED piscaram simultaneamente, resultando na cor branca acendendo e apagando conforme o esperado.
 - ![Teste LEDs Pisca](docs/video4.gif)
 
 ---
