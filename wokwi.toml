@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = '/build/gpio-pin-controll-led.hex'
+elf = '/build/gpio-pin-controll-led.elf'
