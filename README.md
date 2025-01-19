@@ -173,7 +173,7 @@ Os testes realizados no microcontrolador podem ser visualizados [aqui](https://d
 
 ## Vídeo Ensaio
 
-Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode ser visualizado [aqui](https://www.dropbox.com/scl/fi/e5upmcejk5i5hqkecvmor/test-all.mp4?rlkey=f0gfm8ggtcfcmja9on16qw8lu&st=rjjm9eep&dl=0).
+Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode ser visualizado [aqui](https://www.dropbox.com/scl/fi/k9m5nmvstxah57ag2ah7c/test-all.mp4?rlkey=x65cjpvh3a8fxn5h4dw411jmu&st=mp245ijy&dl=0).
 
 ## Formação da Equipe
 
