@@ -191,6 +191,7 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
   - Adão Thalisson Castro Guimarães
   - Nicole Rocha
   - João Felipe Teles Monte
+  - Atenilton Santos de Souza Júnior
 
 ## Licença
 
