@@ -16,7 +16,7 @@
   - [4. Acendendo o Pisca](#4-acendendo-o-pisca)
   - [5. Ativando o Buzzer](#5-ativando-o-buzzer)
   - [6. Restrições de Interação](#6-restrições-de-interação)
-  - [Testes no Hardware](#-Testes-no-Hardware)
+  - [Testes no Hardware](#testes-no-hardware)
   - [Resultados Gerais](#resultados-gerais)
 - [Vídeo Ensaio](#vídeo-ensaio)
 - [Formação da Equipe](#formação-da-equipe)
@@ -149,7 +149,7 @@ Os testes realizados foram:
   1. Pressione a tecla `#` e observe:
      - O buzzer emite cinco bipes consecutivos, cada um com 200ms de duração.
 - **Resultado:** O buzzer emitiu os bipes conforme o esperado.
-- [Veja o vídeo do teste aqui.](https://www.dropbox.com/scl/fi/86g24fopjbjhhmrunfszl/video5.mp4?rlkey=4fymozcalqzncdr6g4o1yijar&st=xps67a5f&dl=0)
+- [Veja o vídeo do teste aqui.](https://www.dropbox.com/scl/fi/r86f8fq18fu5g5wb6dfhl/video5.mp4?rlkey=4iqjxy95kwneo27kcoal1wdql&st=yp2yb20i&dl=0)
 
 ---
 
@@ -165,6 +165,7 @@ Os testes realizados foram:
 ---
 
 ### Testes no Hardware
+
 Os testes realizados no microcontrolador podem ser visualizados [aqui](https://drive.google.com/drive/folders/1Q8HoYM7lStuAnmCfRLd9xlOuZLb4y-FL?usp=drive_link).
 
 ### Resultados Gerais
