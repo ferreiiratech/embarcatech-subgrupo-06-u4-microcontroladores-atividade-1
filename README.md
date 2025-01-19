@@ -16,6 +16,7 @@
   - [4. Acendendo o Pisca](#4-acendendo-o-pisca)
   - [5. Ativando o Buzzer](#5-ativando-o-buzzer)
   - [6. Restrições de Interação](#6-restrições-de-interação)
+  - [Testes no Hardware](#-Testes-no-Hardware)
   - [Resultados Gerais](#resultados-gerais)
 - [Vídeo Ensaio](#vídeo-ensaio)
 - [Formação da Equipe](#formação-da-equipe)
@@ -162,6 +163,9 @@ Os testes realizados foram:
 - ![Teste Restrições](docs/restricoes.gif)
 
 ---
+
+### Testes no Hardware
+Os testes realizados no microcontrolador podem ser visualizados [aqui](https://drive.google.com/drive/folders/1Q8HoYM7lStuAnmCfRLd9xlOuZLb4y-FL?usp=drive_link).
 
 ### Resultados Gerais
 
