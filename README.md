@@ -95,7 +95,7 @@ Os vídeos de testes no hardware podem ser visualizados [aqui](https://drive.goo
 - **Desenvolvedores**:
   - Yasmin Cordeiro de Souza Meira
   - Nicole Rocha
-  - [Nome do Desenvolvedor 3]
+  - Atenilton santos de Souza Júnior
   - [Nome do Desenvolvedor 4]
   - [Nome do Desenvolvedor 5]
 
