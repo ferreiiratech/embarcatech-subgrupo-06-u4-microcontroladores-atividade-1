@@ -11,13 +11,12 @@
 - [Instruções de Uso](#instruções-de-uso)
 - [Testes](#testes)
   - [1. Acendendo as cores do LED individualmente](#1-acendendo-as-cores-do-led-individualmente)
-  - [2. Acendendo Todas as cores do LED simultaneamente](#2-acendendo-todas-as-cores-do-led-simultaneamente)
+  - [2. Acendendo todas as cores do LED simultaneamente](#2-acendendo-todas-as-cores-do-led-simultaneamente)
   - [3. Acendendo as cores do LED alternadamente](#3-acendendo-as-cores-do-led-alternadamente)
-  - [4. Acendendo o Pisca](#4-acendendo-o-pisca)
-  - [5. Ativando o Buzzer](#5-ativando-o-buzzer)
-  - [6. Restrições de Interação](#6-restrições-de-interação)
+  - [4. Acendendo o pisca](#4-acendendo-o-pisca)
+  - [5. Ativando o buzzer](#5-ativando-o-buzzer)
   - [Testes no Hardware](#testes-no-hardware)
-  - [Resultados Gerais](#resultados-gerais)
+  - [Resultados gerais](#resultados-gerais)
 - [Vídeo Ensaio](#vídeo-ensaio)
 - [Formação da Equipe](#formação-da-equipe)
 - [Licença](#licença)
@@ -84,11 +83,13 @@ Este projeto controla pinos GPIO de um microcontrolador RP2040, presente na plac
    - Ao pressionar as teclas **2**, **3**, e **5**, o LED RGB mostra uma cor diferente.
    - Ao pressionar a tecla **#**, o buzzer emitirá um som.
 
-## Testes
+# Testes do Sistema
 
-A equipe implementou testes básicos para garantir que cada componente (teclado, LED e buzzer) funcione corretamente. Todos os testes foram realizados no simulador Wokwi e também na placa Raspberry Pi Pico W.
+A equipe implementou testes básicos para garantir o funcionamento correto dos componentes (teclado, LED e buzzer). Todos os testes foram realizados no simulador Wokwi e na placa Raspberry Pi Pico W.
 
-Os testes realizados foram:
+## Testes Realizados
+
+---
 
 ### 1. Acendendo as cores do LED individualmente
 
@@ -97,20 +98,30 @@ Os testes realizados foram:
   1. Pressione a tecla `2` para ligar o LED verde.
   2. Pressione a tecla `3` para ligar o LED azul.
   3. Pressione a tecla `5` para ligar o LED vermelho.
-  4. Pressione a tecla `0` para desliga as cores do LED.
+  4. Pressione a tecla `0` para desligar as cores do LED.
 - **Resultado:** Cada LED acendeu corretamente e foi desligado ao pressionar `0`.
-- ![Teste LEDs Individualmente](docs/video1.gif)
+
+  **Teste no Simulador:**  
+  ![Teste LEDs Individualmente (Simulador)](docs/video1.gif)  
+
+  **Teste no Hardware:**  
+  ![Teste LEDs Individualmente (Hardware)](docs/LIGAR_E_DESLIGAR_CADA_LED.gif)
 
 ---
 
-### 2. Acendendo Todas as cores do LED simultaneamente
+### 2. Acendendo todas as cores do LED simultaneamente
 
 - **Descrição:** Verifica se todas as cores do LED acendem ao mesmo tempo, resultando na cor branca, ao pressionar a tecla `6`.
 - **Passos:**
   1. Pressione a tecla `6` para acender a cor branca no LED.
   2. Pressione a tecla `0` para desligar todas as cores do LED.
-- **Resultado:** Todos as cores do LED acenderam simultaneamente resultando na cor branca e foram desligados ao pressionar `0`.
-- ![Teste LEDs Simultâneos](docs/video2.gif)
+- **Resultado:** Todas as cores do LED acenderam simultaneamente, resultando na cor branca, e foram desligadas ao pressionar `0`.
+
+  **Teste no Simulador:**  
+  ![Teste LEDs Simultâneos (Simulador)](docs/video2.gif)  
+
+  **Teste no Hardware:**  
+  ![Teste LEDs Simultâneos (Hardware)](docs/LIGAR_TODOS_OS_LEDS_2.gif)
 
 ---
 
@@ -124,52 +135,48 @@ Os testes realizados foram:
      - LED vermelho acende, enquanto verde e azul estão apagados.
   2. O ciclo se repete cinco vezes.
 - **Resultado:** As cores do LED alternaram corretamente em sequência por cinco ciclos.
-- ![Teste LEDs Alternados](docs/video3.gif)
+
+  **Teste no Simulador:**  
+  ![Teste LEDs Alternados (Simulador)](docs/video3.gif)  
+
+  **Teste no Hardware:**  
+  ![Teste LEDs Alternados (Hardware)](docs/LIGAR_LEDS_ALTERNADAMENTE.gif)
 
 ---
 
-### 4. Acendendo o Pisca
+### 4. Acendendo o pisca
 
-- **Descrição:** Verifica se todos as cores do LED piscam simultaneamente ao pressionar a tecla `8`.
+- **Descrição:** Verifica se todas as cores do LED piscam simultaneamente ao pressionar a tecla `8`.
 - **Passos:**
   1. Pressione a tecla `8` e observe o comportamento:
-     - Todos as cores do LED acendem juntos e depois apagam.
+     - Todas as cores do LED acendem juntas e depois apagam.
      - O ciclo de piscar se repete cinco vezes.
-- **Resultado:** Todos as cores do LED piscaram simultaneamente, resultando na cor branca acendendo e apagando conforme o esperado.
-- ![Teste LEDs Pisca](docs/video4.gif)
+- **Resultado:** Todas as cores do LED piscaram simultaneamente, resultando na cor branca acendendo e apagando conforme o esperado.
+
+  **Teste no Simulador:**  
+  ![Teste LEDs Pisca (Simulador)](docs/video4.gif)  
+
+  **Teste no Hardware:**  
+  ![Teste LEDs Pisca (Hardware)](docs/PISCAR_TODOS_OS_LEDS_2.gif)
 
 ---
 
-### 5. Ativando o Buzzer
+### 5. Ativando o buzzer
 
 - **Descrição:** Verifica se o buzzer emite som corretamente ao pressionar a tecla `#`.
 - **Passos:**
   1. Pressione a tecla `#` e observe:
      - O buzzer emite cinco bipes consecutivos, cada um com 200ms de duração.
 - **Resultado:** O buzzer emitiu os bipes conforme o esperado.
-- [Veja o vídeo do teste aqui.](https://www.dropbox.com/scl/fi/r86f8fq18fu5g5wb6dfhl/video5.mp4?rlkey=4iqjxy95kwneo27kcoal1wdql&st=yp2yb20i&dl=0)
+  - Teste no Simulador: [Veja o vídeo no YouTube](https://www.youtube.com/watch?v=uAZL45Uuh_U)
+  - Teste no Hardware: [Veja o vídeo no YouTube](https://youtu.be/zUgdY5XnZsk)
 
 ---
 
-### 6. Restrições de Interação
-
-- **Descrição:** Verifica se o sistema responde apenas às teclas permitidas (`2`, `3`, `5`, `6`, `8`, `9`, `#`, `0`) e ignora teclas inválidas.
-- **Passos:**
-  1. Pressione qualquer tecla fora das permitidas (por exemplo, `1`, `4`, `7`, `A`, `B`, `C`, `D`, `*`).
-  2. Observe se o sistema exibe uma mensagem de "tecla inválida" e não realiza nenhuma ação.
-- **Resultado:** Apenas as teclas permitidas produziram ações; teclas inválidas foram ignoradas com mensagens de erro.
-- ![Teste Restrições](docs/restricoes.gif)
-
----
-
-### Testes no Hardware
-
-Os testes realizados no microcontrolador podem ser visualizados [aqui](https://drive.google.com/drive/folders/1Q8HoYM7lStuAnmCfRLd9xlOuZLb4y-FL?usp=drive_link).
-
-### Resultados Gerais
+## Resultados Gerais
 
 - Todos os testes foram concluídos com sucesso tanto no simulador Wokwi quanto na placa Raspberry Pi Pico W.
-- Os GIFs demonstrando os testes podem ser encontrados na pasta [`docs/`](docs/).
+- Os arquivos de demonstração podem ser encontrados na pasta [`docs/`](docs/).
 
 ## Vídeo Ensaio
 
@@ -177,13 +184,13 @@ Um vídeo ensaio de até 3 minutos demonstrando o funcionamento do projeto pode 
 
 ## Formação da Equipe
 
-- **Líder do Projeto**: [Nome do Líder]
+- **Líder do Projeto**: Leonardo Ferreira
 - **Desenvolvedores**:
   - Yasmin Cordeiro de Souza Meira
   - Arthur Saldanha Félix Ulisses
   - Adão Thalisson Castro Guimarães
   - Nicole Rocha
-  - [Nome do Desenvolvedor 5]
+  - João Felipe Teles Monte
 
 ## Licença
 
